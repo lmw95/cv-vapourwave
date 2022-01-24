@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@900&display=swap');
+
+@import "_media-queries.css";
+
+:root {
+    --text: 'Space Mono', monospace;
+    --headers: 'Azeret Mono', monospace;
+    --orange: #EF7B45;
+    --darkgreen: #042A2B;
+    --lightblue: #0A6D70;
+    --white: #FFF;
+}
+
+h1,
+h2 {
+    font-family: var(--headers);
+    font-weight: 900;
+    text-shadow: 
+        6px 6px        yellow, 
+        5.75px 5.75px  yellow, 
+        5.5px 5.5px    yellow, 
+        5.25px 5.25px  yellow,
+        5px 5px        yellow, 
+        4.75px 4.75px  yellow, 
+        4.5px 4.5px    yellow, 
+        4.25px 4.25px  yellow,
+        4px 4px        yellow,
+        3.75px 3.75px  yellow,
+        3.5px 3.5px    yellow,
+        3.25px 3.25px  yellow,
+        3px 3px        yellow,
+        2.75px 2.75px  yellow,
+        2.5px 2.5px    yellow,
+        2.25px 2.25px  yellow,
+        2px 2px        yellow,
+        1.75px 1.75px  yellow,
+        1.5px 1.5px    yellow,
+        1.25px 1.25px  yellow,
+        1px 1px        yellow,
+        0.75px 0.75px  yellow,
+        0.5px 0.5px    yellow,
+        0.25px 0.25px  yellow;
+    font-size: 3em;
+}
+
+li,
+a,
+p {
+    font-family: var(--text);
+}
+
+button {
+    font-family: var(--headers);
+}
+
+
+/*-----Navbar/header-----*/
+
+.navbar {
+    background-color: var(--darkgreen);
+    box-shadow: -1200px 4px var(--lightblue);
+}
+
+.nav-link {
+    color: var(--orange);
+    text-shadow: 1px 3px 0px var(--lightblue);
+}
+
+.nav-link:hover {
+    color: var(--orange);
+}
+
+.download-wrapper {
+    filter: drop-shadow(5px 4px 0px var(--lightblue));
+}
+
+.download-cv {
+    background-color: var(--orange);
+    color: var(--darkgreen);
+    clip-path: polygon(
+        0% 15%, 
+        0% 15%, 
+        0% 0%,
+        97% 0%, 
+        97% 15%, 
+        100% 15%, 
+        100% 100%, 
+        100% 100%, 
+        100% 100%, 
+        3% 100%, 
+        3% 85%, 
+        0% 85%);
+}
+
+.download-cv:hover {
+    color: var(--darkgreen);
+}
+
+.navbar-toggler {
+    padding: 0.2em 0.75em 0.75em;
+    padding-left: 0px;
+}
+
+.nav-scrolled {
+    /* Box shadow */
+    /* Clip path */
+    /* Color */
+    transition: all 0.3s ease-in-out;
+}
+
+.header-image {
+    height: 100vh;
+    background-color: var(--darkgreen);
+}
+
+.section {
+    height: 100vh;
+}
+
+
