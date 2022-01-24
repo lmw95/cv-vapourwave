@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@900&display=swap');
 
 @import "_media-queries.css";
@@ -6,19 +6,124 @@
 :root {
     --text: 'Space Mono', monospace;
     --headers: 'Azeret Mono', monospace;
-    --orange: #EF7B45;
-    --orange-t: rgba(239, 123, 69, 0.7);
-    --darkgreen: #042A2B;
-    --darkgreen-t: rgba(4, 42, 43, 0.7);
-    --lightblue: #0A6D70;
+    --pink: #E866A5;
+    --purple: #300350;
+    --lightblue: #36CE9F;
     --white: #FFF;
 }
 
 h1,
 h2 {
-    color: var(--darkgreen);
+    color: var(--purple);
     font-family: var(--headers);
     font-weight: 900;
+}
+
+li,
+a,
+p {
+    font-family: var(--text);
+}
+
+button {
+    font-family: var(--headers);
+}
+
+
+/*-----Navbar/header-----*/
+
+.navbar {
+    background: -webkit-linear-gradient(360deg, var(--pink), transparent 50%);
+}
+
+.nav-link {
+    color: var(--purple);
+}
+
+.nav-link:hover {
+    color: var(--pink);
+}
+
+.nav-item:focus {
+    color: var(--lightblue);
+}
+
+.download-wrapper {
+    filter: drop-shadow(5px 4px 0px var(--lightblue));
+}
+
+.download-cv {
+    background-color: var(--pink);
+    color: var(--purple);
+    clip-path: polygon(
+        0% 15%, 
+        0% 15%, 
+        0% 0%,
+        97% 0%, 
+        97% 15%, 
+        100% 15%, 
+        100% 100%, 
+        100% 100%, 
+        100% 100%, 
+        3% 100%, 
+        3% 85%, 
+        0% 85%
+    );
+}
+
+.download-cv:hover {
+    color: var(--purple);
+}
+
+.navbar-toggler {
+    padding: 0.2em 0.75em 0.75em;
+    padding-left: 0px;
+}
+
+.nav-scrolled {
+    /* Box shadow */
+    /* Clip path */
+    /* Color */
+    transition: all 0.3s ease-in-out;
+}
+
+.header-image {
+    height: 100vh;
+    background: url(/assets/media/vapourwave.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.header-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: var(--purple-t);
+    /*
+    background: -webkit-linear-gradient(360deg, var(--purple), var(--pink-t) 95%) !important; */
+}
+
+.header-text-container {
+    filter: drop-shadow(7px 8px 0px var(--lightblue));
+}
+
+.header-text {
+    background-color: var(--pink);
+    clip-path: polygon(
+        0% 15%, 
+        0% 15%, 
+        0% 0%,
+        95% 0%, 
+        95% 15%, 
+        100% 15%, 
+        100% 100%, 
+        100% 100%, 
+        100% 100%, 
+        5% 100%, 
+        5% 85%, 
+        0% 85%
+    );
+}
+
+.header-text h1 {
     text-shadow: 
         6px 6px        var(--lightblue), 
         5.75px 5.75px  var(--lightblue), 
@@ -47,115 +152,75 @@ h2 {
     font-size: 3em;
 }
 
-li,
-a,
-p {
-    font-family: var(--text);
-}
-
-button {
-    font-family: var(--headers);
-}
-
-
-/*-----Navbar/header-----*/
-
-.navbar {
-    background-color: var(--darkgreen);
-}
-
-.nav-link {
-    color: var(--orange);
-    text-shadow: 1px 3px 0px var(--lightblue);
-}
-
-.nav-link:hover {
-    color: var(--orange);
-}
-
-.nav-item:focus {
-    color: var(--lightblue);
-}
-
-.download-wrapper {
-    filter: drop-shadow(5px 4px 0px var(--lightblue));
-}
-
-.download-cv {
-    background-color: var(--orange);
-    color: var(--darkgreen);
-    clip-path: polygon(
-        0% 15%, 
-        0% 15%, 
-        0% 0%,
-        97% 0%, 
-        97% 15%, 
-        100% 15%, 
-        100% 100%, 
-        100% 100%, 
-        100% 100%, 
-        3% 100%, 
-        3% 85%, 
-        0% 85%
-    );
-}
-
-.download-cv:hover {
-    color: var(--darkgreen);
-}
-
-.navbar-toggler {
-    padding: 0.2em 0.75em 0.75em;
-    padding-left: 0px;
-}
-
-.nav-scrolled {
-    /* Box shadow */
-    /* Clip path */
-    /* Color */
-    transition: all 0.3s ease-in-out;
-}
-
-.header-image {
-    height: 100vh;
-    background: url(/assets/media/code-3.jpg) no-repeat center;
-    background-size: cover;
-}
-
-.header-overlay {
-    height: 100%;
-    width: 100%;
-    background-color: var(--darkgreen-t);
-    /*
-    background: -webkit-linear-gradient(360deg, var(--darkgreen), var(--orange-t) 95%) !important; */
-}
-
-.header-text-container {
-    filter: drop-shadow(7px 8px 0px var(--lightblue));
-}
-
-.header-text {
-    background-color: var(--orange);
-    clip-path: polygon(
-        0% 15%, 
-        0% 15%, 
-        0% 0%,
-        95% 0%, 
-        95% 15%, 
-        100% 15%, 
-        100% 100%, 
-        100% 100%, 
-        100% 100%, 
-        5% 100%, 
-        5% 85%, 
-        0% 85%
-    );
-}
-
 .header-text p {
-    background: -webkit-linear-gradient(45deg, var(--darkgreen), var(--lightblue) 90%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    color: var(--purple);
+    font-weight: 700;
+}
+
+.terminal-icon {
+    animation: blink 1s infinite linear;
+}
+
+/*-----Skills section-----*/
+
+.skills-section {
+    background-color: var(--lightblue);
+}
+
+.skills-section h1 {
+    text-shadow: 
+        6px 6px        var(--pink), 
+        5.75px 5.75px  var(--pink), 
+        5.5px 5.5px    var(--pink), 
+        5.25px 5.25px  var(--pink),
+        5px 5px        var(--pink), 
+        4.75px 4.75px  var(--pink), 
+        4.5px 4.5px    var(--pink), 
+        4.25px 4.25px  var(--pink),
+        4px 4px        var(--pink),
+        3.75px 3.75px  var(--pink),
+        3.5px 3.5px    var(--pink),
+        3.25px 3.25px  var(--pink),
+        3px 3px        var(--pink),
+        2.75px 2.75px  var(--pink),
+        2.5px 2.5px    var(--pink),
+        2.25px 2.25px  var(--pink),
+        2px 2px        var(--pink),
+        1.75px 1.75px  var(--pink),
+        1.5px 1.5px    var(--pink),
+        1.25px 1.25px  var(--pink),
+        1px 1px        var(--pink),
+        0.75px 0.75px  var(--pink),
+        0.5px 0.5px    var(--pink),
+        0.25px 0.25px  var(--pink);
+    font-size: 3em;
+}
+
+.skills-section p {
+    color: var(--purple);
+    font-size: 1rem;
+}
+
+/*-----Projects section-----*/
+
+/*-----Work history section-----*/
+
+/*-----Contact section-----*/
+
+/*-----Media queries-----*/
+
+@keyframes blink {
+    
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+
 }
 
 

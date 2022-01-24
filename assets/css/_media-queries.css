@@ -1,10 +1,17 @@
 @media screen and (max-width: 991px) {
 
+    .navbar {
+        background: -webkit-linear-gradient(360deg, var(--pink), var(--purple) 50%) !important;
+    }
 
     .navbar-nav {
         flex-direction: row;
         justify-content: space-evenly !important;
         margin: 30px 0;
+    }
+
+    .nav-link {
+        color: var(--lightblue) !important;
     }
 
     .download-wrapper {
@@ -15,6 +22,10 @@
 
     .navbar-toggler-icon {
         color: var(--orange);
+    }
+
+    .header-text h1 {
+        font-size: 2em !important;
     }
 
 }
@@ -29,11 +40,36 @@
 }
 
 
-
 @media screen and (min-width: 578px) and (max-width: 991px) {
 
     .nav-item {
         font-size: 2em;
+    }
+
+}
+
+
+@media screen and (max-width: 585px) {
+    
+    .header-overlay {
+        justify-content: center;
+    }
+
+    .header-text {
+        padding: 1.9em !important;
+    }
+
+    .header-text h1 {
+        font-size: 1.2em !important;
+        text-align: center;
+    }
+
+    .header-text p {
+        font-size: 0.6em;
+    }
+
+    .header-wrapper {
+        justify-content: center;
     }
 
 }
