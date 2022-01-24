@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
 @import "_media-queries.css";
 
 :root {
     --text: 'Space Mono', monospace;
-    --headers: 'Azeret Mono', monospace;
+    --headers: 'Orbitron', sans-serif;;
     --pink: #E866A5;
     --purple: #300350;
     --lightblue: #36CE9F;
@@ -14,7 +14,6 @@
 
 h1,
 h2 {
-    color: var(--purple);
     font-family: var(--headers);
     font-weight: 900;
 }
@@ -41,7 +40,8 @@ button {
 }
 
 .nav-link:hover {
-    color: var(--pink);
+    color: var(--purple);
+    text-shadow: 1px 2px 0px var(--lightblue);
 }
 
 .nav-item:focus {
@@ -80,13 +80,6 @@ button {
     padding-left: 0px;
 }
 
-.nav-scrolled {
-    /* Box shadow */
-    /* Clip path */
-    /* Color */
-    transition: all 0.3s ease-in-out;
-}
-
 .header-image {
     height: 100vh;
     background: url(/assets/media/vapourwave.jpg) no-repeat center;
@@ -97,8 +90,6 @@ button {
     height: 100%;
     width: 100%;
     background-color: var(--purple-t);
-    /*
-    background: -webkit-linear-gradient(360deg, var(--purple), var(--pink-t) 95%) !important; */
 }
 
 .header-text-container {
@@ -150,6 +141,7 @@ button {
         0.5px 0.5px    var(--lightblue),
         0.25px 0.25px  var(--lightblue);
     font-size: 3em;
+    color: var(--purple);
 }
 
 .header-text p {
@@ -200,6 +192,31 @@ button {
     color: var(--purple);
     font-size: 1rem;
 }
+
+.skills-wrapper {
+    filter: drop-shadow(7px 8px 0px var(--pink));
+}
+
+.skills-box {
+    background-color: var(--purple) !important;
+    clip-path: polygon(
+        0% 15%, 
+        0% 15%, 
+        0% 0%,
+        95% 0%, 
+        95% 15%, 
+        100% 15%, 
+        100% 100%, 
+        100% 100%, 
+        100% 100%, 
+        5% 100%, 
+        5% 85%, 
+        0% 85%
+    );
+    color: var(--white);
+    width: 23%;
+}
+
 
 /*-----Projects section-----*/
 

@@ -1,7 +1,7 @@
 @media screen and (max-width: 991px) {
 
     .navbar {
-        background: -webkit-linear-gradient(360deg, var(--pink), var(--purple) 50%) !important;
+        background: -webkit-linear-gradient(-134deg, var(--pink), var(--purple) 60%) !important;
     }
 
     .navbar-nav {
@@ -26,6 +26,7 @@
 
     .header-text h1 {
         font-size: 2em !important;
+        margin-bottom: 10px;
     }
 
 }
@@ -44,6 +45,11 @@
 
     .nav-item {
         font-size: 2em;
+    }
+
+    .skills-box {
+        width: 47% !important;
+        margin-bottom: 20px;
     }
 
 }
@@ -70,6 +76,11 @@
 
     .header-wrapper {
         justify-content: center;
+    }
+
+    .skills-box {
+        width: 47% !important;
+        margin-bottom: 20px;
     }
 
 }
