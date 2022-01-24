@@ -1,5 +1,6 @@
 @media screen and (max-width: 991px) {
 
+
     .navbar-nav {
         flex-direction: row;
         justify-content: space-evenly !important;
@@ -9,9 +10,25 @@
     .download-wrapper {
         display: flex;
         justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .navbar-toggler-icon {
+        color: var(--orange);
     }
 
 }
+
+
+@media screen and (min-width: 991px) {
+
+    .navbar {
+        padding-bottom: 1.2rem !important;
+    }
+
+}
+
+
 
 @media screen and (min-width: 578px) and (max-width: 991px) {
 
